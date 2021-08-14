@@ -1,14 +1,14 @@
-import {Button, Container} from 'react-bootstrap';
+import {BrowserRouter as Router} from 'react-router-dom';
+
 import Header from './components/Header';
 
 function App() {
-  return <Container>
-    <Header />
-    <br></br>
-    <br></br>
-    <br></br>
-    <Button className='btn btn-danger'>Add Me</Button>
-  </Container>  
+  return <>
+    <Router>
+      <Header />
+
+    </Router>
+  </>  
 }
 
 export default App;
