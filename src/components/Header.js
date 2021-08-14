@@ -1,18 +1,20 @@
 import { Navbar, Nav, Container } from "react-bootstrap";
+import { BrowserRouter as Router, Link} from "react-router-dom";
 
 function Header() {
   return (
-    <header>
+    <Router>
       <Navbar bg="dark" fixed="top" variant="dark">
         <Container>
           <Navbar.Brand href="/">AMU-Staff</Navbar.Brand>
           <Nav className="justify-content-end">
-            <Nav.Link href="/">Home</Nav.Link>
+              <li><Link to="/">What</Link></li>
+            <Nav.Link to="/">Home</Nav.Link>
             <Nav.Link href="#link">Login</Nav.Link>
           </Nav>
         </Container>
       </Navbar>
-    </header>
+    </Router>
   );
 }
 
