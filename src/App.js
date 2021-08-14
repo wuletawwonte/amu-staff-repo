@@ -1,4 +1,3 @@
-import Container from "react-bootstrap/Container";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import Header from "./components/Header";
@@ -10,16 +9,16 @@ function App() {
     <>
       <Router>
         <Header />
-        <Container>
+        <div className='container col-lg-7'>
           <Switch>
-            <Route path="/" exact={true}>
+            <Route path="/" exact>
               <Home />
             </Route>
             <Route path="/about">
               <About />
             </Route>
           </Switch>
-        </Container>
+        </div>
       </Router>
     </>
   );
